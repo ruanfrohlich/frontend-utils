@@ -1,22 +1,36 @@
 {
-  "name": "@ruan/frontend-utils",
-  "version": "1.0.0",
+  "name": "@ruanfrohlich/frontend-utils",
+  "version": "1.0.1",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
-  "repository": "git@github.com:ruanfrohlich/frontend-utils.git",
+  "repository": {
+    "url": "git+ssh://git@github.com:ruanfrohlich/frontend-utils.git",
+    "type": "git"
+  },
   "author": "Ruan Frohlich <ruanfrohlich@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "parcel -p 3000",
     "build:watch": "parcel watch",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy": "yarn build && yarn publish"
   },
   "devDependencies": {
     "@parcel/packager-ts": "2.12.0",
     "@parcel/transformer-typescript-types": "2.12.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
     "parcel": "^2.12.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
     "typescript": ">=3.0.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
