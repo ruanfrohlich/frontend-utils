@@ -130,5 +130,7 @@ dist
 .pnp.*
 
 # Others
-dist
-.parcel-cache
+dist/
+.parcel-cache/
+.vscode/
+.npmrc
