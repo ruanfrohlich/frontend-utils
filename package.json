@@ -1,15 +1,38 @@
 {
   "name": "@ruanfrohlich/frontend-utils",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "source": "src/index.ts",
-  "main": "dist/main.js",
-  "css": "dist/main.css",
-  "module": "dist/module.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/types.d.ts",
+  "css": "dist/main.css",
+  "targets": {
+    "main": {
+      "outputFormat": "commonjs",
+      "isLibrary": true,
+      "includeNodeModules": [
+        "react",
+        "react-dom"
+      ]
+    },
+    "module": {
+      "outputFormat": "esmodule",
+      "isLibrary": true,
+      "includeNodeModules": [
+        "react",
+        "react-dom"
+      ]
+    },
+    "css": {
+      "source": "src/css/index.css"
+    }
+  },
   "files": [
-    "dist",
-    "src/styles/main.css"
+    "dist"
   ],
+  "engines": {
+    "node": ">= 18"
+  },
   "repository": {
     "url": "git+ssh://git@github.com:ruanfrohlich/frontend-utils.git",
     "type": "git"
@@ -24,6 +47,7 @@
   },
   "devDependencies": {
     "@parcel/packager-ts": "2.12.0",
+    "@parcel/transformer-postcss": "^2.12.0",
     "@parcel/transformer-typescript-types": "2.12.0",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
@@ -31,6 +55,7 @@
     "prettier": "^3.3.3",
     "process": "^0.11.10",
     "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.14",
     "typescript": ">=3.0.0"
   },
   "dependencies": {
