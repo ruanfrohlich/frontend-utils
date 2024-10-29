@@ -41,7 +41,7 @@
   "license": "MIT",
   "scripts": {
     "docs": "storybook dev -p 3006 --no-open",
-    "docs:build": "storybook build",
+    "docs:build": "storybook build --docs -o docs",
     "docs:start": "yarn docs:build && http-server -p 3006 storybook-static/",
     "build": "rimraf dist && parcel build",
     "deploy": "yarn build && yarn publish",
