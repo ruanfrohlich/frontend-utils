@@ -1,9 +1,7 @@
 <h1 align="center">Welcome to @ruanfrohlich/frontend-utils 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/@ruanfrohlich/frontend-utils" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/@ruanfrohlich/frontend-utils.svg">
-  </a>
-  <img src="https://img.shields.io/badge/node-%3E%3D%2018-blue.svg" />
+<img src="https://img.shields.io/badge/yarn-v1-red.svg" />
+  <img src="https://img.shields.io/badge/node-v20-blue.svg" />
   <a href="https://github.com/ruanfrohlich/frontend-utils" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -19,7 +17,7 @@
 ## Prerequisites
 
 - node >= 20
-- yarn >= 1.22.22
+- yarn
 
 ## Install dependencies
 
