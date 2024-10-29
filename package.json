@@ -40,6 +40,8 @@
   "author": "Ruan Frohlich <ruanfrohlich@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "docs": "storybook dev -p 3006 --no-open",
+    "docs:build": "storybook build",
     "dev": "parcel docs/index.html -p 3000",
     "build": "rimraf dist && parcel build",
     "deploy": "yarn build && yarn publish",
@@ -49,17 +51,27 @@
     "@parcel/packager-ts": "2.12.0",
     "@parcel/transformer-postcss": "^2.12.0",
     "@parcel/transformer-typescript-types": "2.12.0",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1",
+    "@storybook/addon-essentials": "8.3.6",
+    "@storybook/addon-links": "8.3.6",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/addon-webpack5-compiler-swc": "1.0.5",
+    "@storybook/blocks": "8.3.6",
+    "@storybook/react": "8.3.6",
+    "@storybook/react-webpack5": "8.3.6",
+    "@types/node": "^22.8.2",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "parcel": "^2.12.0",
+    "postcss-loader": "^8.1.1",
     "prettier": "^3.3.3",
     "process": "^0.11.10",
     "rimraf": "^6.0.1",
+    "storybook": "8.3.6",
     "tailwindcss": "^3.4.14",
     "typescript": ">=3.0.0"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^18",
+    "react-dom": "^18"
   }
 }

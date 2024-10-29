@@ -134,3 +134,4 @@ dist/
 .parcel-cache/
 .vscode/
 .npmrc
+*storybook.log
