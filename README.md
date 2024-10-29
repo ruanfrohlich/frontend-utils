@@ -12,7 +12,7 @@
 
 > React components lib for fast project development, uses storybook for documentation and tailwind for styles.
 
-### 🏠 [Homepage](https://github.com/ruanfrohlich/frontend-utils)
+### 🏠 [Homepage](https://ruanfrohlich.github.io/frontend-utils)
 
 ## Prerequisites
 
