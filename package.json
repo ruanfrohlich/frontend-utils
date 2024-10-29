@@ -42,6 +42,7 @@
   "scripts": {
     "docs": "storybook dev -p 3006 --no-open",
     "docs:build": "storybook build",
+    "docs:start": "yarn docs:build && http-server -p 3006 storybook-static/",
     "build": "rimraf dist && parcel build",
     "deploy": "yarn build && yarn publish",
     "lib:local": "yarn pack --filename lib.tgz"
@@ -60,6 +61,7 @@
     "@types/node": "^22.8.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "http-server": "^14.1.1",
     "parcel": "^2.12.0",
     "postcss-loader": "^8.1.1",
     "prettier": "^3.3.3",
