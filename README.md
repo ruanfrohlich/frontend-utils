@@ -19,6 +19,7 @@
 ## Prerequisites
 
 - node >= 20
+- yarn
 
 ## Install dependencies
 
