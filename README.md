@@ -31,7 +31,7 @@ yarn install
 yarn docs
 ```
 
-Will open storybook
+Will start storybook's dev server
 
 ## Author
 
