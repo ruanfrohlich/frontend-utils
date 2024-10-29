@@ -12,15 +12,15 @@
   </a>
 </p>
 
-> React components lib for fast project development
+> React components lib for fast project development, uses storybook for documentation and tailwind for styles.
 
 ### 🏠 [Homepage](https://github.com/ruanfrohlich/frontend-utils)
 
 ## Prerequisites
 
-- node >= 18
+- node >= 20
 
-## Install
+## Install dependencies
 
 ```sh
 yarn install
@@ -29,16 +29,18 @@ yarn install
 ## Usage
 
 ```sh
-yarn dev
+yarn docs
 ```
+
+Will open storybook
 
 ## Author
 
 👤 **Ruan Frohlich <ruanfrohlich@gmail.com>**
 
-* Website: https://www.linkedin.com/in/ruanfrohlich/
-* Github: [@ruanfrohlich](https://github.com/ruanfrohlich)
-* LinkedIn: [@ruanfrohlich](https://linkedin.com/in/ruanfrohlich)
+- Website: https://www.linkedin.com/in/ruanfrohlich/
+- Github: [@ruanfrohlich](https://github.com/ruanfrohlich)
+- LinkedIn: [@ruanfrohlich](https://linkedin.com/in/ruanfrohlich)
 
 ## 🤝 Contributing
 
@@ -48,5 +50,6 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

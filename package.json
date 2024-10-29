@@ -31,7 +31,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">= 18"
+    "node": ">= 20"
   },
   "repository": {
     "url": "git+ssh://git@github.com:ruanfrohlich/frontend-utils.git",
@@ -42,7 +42,6 @@
   "scripts": {
     "docs": "storybook dev -p 3006 --no-open",
     "docs:build": "storybook build",
-    "dev": "parcel docs/index.html -p 3000",
     "build": "rimraf dist && parcel build",
     "deploy": "yarn build && yarn publish",
     "lib:local": "yarn pack --filename lib.tgz"
