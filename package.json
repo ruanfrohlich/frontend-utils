@@ -40,6 +40,7 @@
   "author": "Ruan Frohlich <ruanfrohlich@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "parcel app/index.html -p 3000 --lazy",
     "docs": "storybook dev -p 3006 --no-open",
     "docs:build": "storybook build --docs -o docs",
     "docs:start": "yarn docs:build && http-server -p 3006 storybook-static/",
@@ -50,6 +51,7 @@
   "devDependencies": {
     "@parcel/packager-ts": "2.12.0",
     "@parcel/transformer-postcss": "^2.12.0",
+    "@parcel/transformer-sass": "2.12.0",
     "@parcel/transformer-typescript-types": "2.12.0",
     "@storybook/addon-essentials": "8.3.6",
     "@storybook/addon-links": "8.3.6",
@@ -61,13 +63,17 @@
     "@types/node": "^22.8.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
     "http-server": "^14.1.1",
     "parcel": "^2.12.0",
     "postcss-loader": "^8.1.1",
+    "postcss-scss": "^4.0.9",
     "prettier": "^3.3.3",
     "process": "^0.11.10",
+    "react-router-dom": "^6.28.0",
     "rimraf": "^6.0.1",
     "storybook": "8.3.6",
+    "stylelint": "^16.10.0",
     "tailwindcss": "^3.4.14",
     "typescript": ">=3.0.0"
   },
